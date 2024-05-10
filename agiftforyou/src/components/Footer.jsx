@@ -6,7 +6,7 @@ import ig_pic from '../images/instagram.png'
 export default function Footer() {
     return (
     <>
-    <div className="flex bg-rose-quartz justify-evenly items-center h-72 w-full ">
+    <div className="flex bg-rose-quartz justify-evenly items-center h-96 w-full ">
       <div className="container mx-auto grid grid-cols-3 gap-4 py-3 justify-items-center p-6">
       <div className=" flex flex-col gap-7 ">
         <div className="flex flex-row">
@@ -19,19 +19,15 @@ export default function Footer() {
             <p className=" ml-2 flex items-center text-2xl text-red-400 font-extrabold" >A Gift for Meow</p>
         </div>
           <div className="flex flex-col gap-4">
-            <p className=" ml-1 text-red-400 text-xl font-semibold">Follow us on:</p>
+            <p className=" ml-1 text-red-400 text-xl font-semibold">Follow me on:</p>
 
           <div className="flex gap-7 items-center ml-1">
-            <img
-              src={fb_pic}
-              alt="Facebook"
-              className=" w-8 h-8 cursor-pointer "
-            />
-            <img
-              src={ig_pic}
-              alt="Instagram"
-              className=" w-8 h-8 cursor-pointer "
-            />
+            <a href="https://www.facebook.com/le.hoangnguyen.39142">
+              <img src={fb_pic} alt="Facebook" className="w-8 h-8 cursor-pointer"/>
+            </a>
+            <a href="https://www.instagram.com/le_hnguyenn03/">
+              <img src={ig_pic} alt="Instagram" className="w-8 h-8 cursor-pointer"/>
+            </a>
             
           </div>
           </div>
@@ -63,9 +59,10 @@ export default function Footer() {
           </div>
 
         </div>
-
+        <p className="text-center text-4xl text-red-500 w-[1000px] ml-[1000px] mt-6">Ngoăn Hoàng Nê loves Meow Meow with all his heart</p>
         
       </div>
     </div>
+    
     </>);
 }
