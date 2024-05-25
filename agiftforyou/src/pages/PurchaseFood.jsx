@@ -8,9 +8,10 @@ import tiramisu from "../images/tiramisu.png";
 import bundau from "../images/bundau.png";
 import banhcanhcua from "../images/banhcanhcua.png";
 import lauhaisan from "../images/lauhaisan.png";
+import shipper from "../images/shipper.jpg";
 import bg from "../images/home-banner-background.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart, faClock, faList } from "@fortawesome/free-solid-svg-icons";
+import { faHeart, faClock, faList, faSmile} from "@fortawesome/free-solid-svg-icons";
 const PurchaseFood = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
 
@@ -46,7 +47,7 @@ const PurchaseFood = () => {
               className="hover:bg-rose-quartz w-40 h-16 rounded-2xl font-semibold bg-rose-200 text-red-400 hover:text-white text-2xl"
               onClick={togglePopup}
             >
-              Order now!!!
+              Order now
             </button>
 
             {isPopupVisible && (
@@ -120,7 +121,7 @@ const PurchaseFood = () => {
               alt="beach background"
             />
             <div className="text-2xl font-bold">Hanur!</div>
-            <p>A abc abc abc</p>
+            <p>Authentic Korean flavors food</p>
           </div>
           <div className="flex flex-col gap-1">
             <img
@@ -129,7 +130,7 @@ const PurchaseFood = () => {
               alt="beach background"
             />
             <div className="text-2xl font-bold">Spring roll</div>
-            <p>A abc abc abc</p>
+            <p>Veges & meat wrapped in a wrapper</p>
           </div>
           <div className="flex flex-col gap-1 mt-[124px] ">
             <img
@@ -138,7 +139,8 @@ const PurchaseFood = () => {
               alt="beach background"
             />
             <div className="text-2xl font-bold">Tiramisu</div>
-            <p>A abc abc abc</p>
+            <p>
+Creamy, coffee-infused Italian dessert </p>
           </div>
         </div>
 
@@ -150,7 +152,7 @@ const PurchaseFood = () => {
               alt="beach background"
             />
             <div className="text-2xl font-bold">Bun Dau Mam Tom</div>
-            <p>A abc abc abc</p>
+            <p>Delicious shrimp paste, tofu noodles</p>
           </div>
           <div className="flex flex-col gap-1 mt-[90px]">
             <img
@@ -159,7 +161,7 @@ const PurchaseFood = () => {
               alt="beach background"
             />
             <div className="text-2xl font-bold">HongKong Seafood Hot Pot</div>
-            <p>A abc abc abc</p>
+            <p>Hotpot with seafood, what else it could be?<FontAwesomeIcon icon={faSmile} className="text-yellow-400 pl-1" /></p>
           </div>
           <div className="flex flex-col gap-1 mt-[14px]">
             <img
@@ -168,7 +170,7 @@ const PurchaseFood = () => {
               alt="beach background"
             />
             <div className="text-2xl font-bold">Crab Tapioca Noodle Soup</div>
-            <p>A abc abc abc</p>
+            <p>2 words: TRÈS DÉLICIEUX, Meow's favorite<FontAwesomeIcon icon={faHeart} className="text-red-400 pl-1" /></p>
           </div>
         </div>
         <div className="flex justify-center">
@@ -181,18 +183,37 @@ const PurchaseFood = () => {
 
           {isPopupVisible && (
             <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-              <div className="bg-white p-8 rounded-xl shadow-lg">
-                <h2 className="text-xl font-bold mb-4 text-center">Order Details</h2>
-                <p>Add your content here...</p>
+              <div className="bg-rose-200 p-8 rounded-xl shadow-lg w-[800px] text-center">
+                <h2 className="text-3xl font-bold mb-4 text-center uppercase text-red-400">
+                  Order Details
+                </h2>
+                <img
+              src={shipper}
+              className="w-48 h-60 rounded-3xl ml-[280px]"
+              alt="beach background"
+            />
+                <div className="font-semibold ">
+                  Our only shipper is READY! Whenever and whatever you want to
+                  eat, just press "Go to Messenger" and text him with the following
+                  Magic Words:
+                </div>
+                <div className="font-bold text-center text-2xl text-red-400 py-5">
+                  "Anh Ngoăn iu dấu ơiiii, hôm nay bé Meow muốn ăn + dishes"
+                </div>
+                <div className="font-semibold">
+                  He'll immediately ship those dishes to you within an hour !!!
+                </div>
                 <div className="flex justify-center gap-5">
-                <button
-                    className="mt-4 px-4 py-2 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 text-white rounded-lg transition duration-300 ease-in-out transform hover:scale-105"
+                  <button
+                    className="font-semibold mt-4 px-4 py-2 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 text-white rounded-lg transition duration-300 ease-in-out transform hover:scale-105"
                     onClick={togglePopup}
                   >
-                    Go to Messenger
+                    <a href="https://facebook.com/messages/e2ee/t/7409040009192054">
+                      Go to Messenger
+                    </a>
                   </button>
                   <button
-                    className="mt-4 px-4 py-2 bg-red-400 text-white rounded-lg transition duration-300 ease-in-out transform hover:scale-105"
+                    className=" font-semibold mt-4 px-4 py-2 bg-red-400 text-white rounded-lg transition duration-300 ease-in-out transform hover:scale-105"
                     onClick={togglePopup}
                   >
                     Close
