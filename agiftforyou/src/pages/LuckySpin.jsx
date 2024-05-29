@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const LuckySpin = () => {
-  return (
-    <div>LuckySpin</div>
-  )
-}
+  return <div>LuckySpin</div>;
+};
 
-export default LuckySpin
+export default LuckySpin;

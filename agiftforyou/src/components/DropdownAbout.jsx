@@ -9,13 +9,13 @@ const DropdownAbout = ({ onClose }) => {
     <div className="absolute top-[55px] w-32 bg-white border border-gray-300 pt-2 rounded-2xl">
       <ul className="flex flex-col gap-4 px-3">
         <li
-          className="hover:bg-gray-300 rounded-xl h-10 flex flex-col justify-center items-center"
+          className="hover:bg-blue-200 rounded-xl h-10 flex flex-col justify-center items-center"
           onClick={() => handleItemClick("About me")}
         >
           <Link to="/about-her">About her</Link>
         </li>
         <li
-          className="hover:bg-gray-300 rounded-xl h-10 flex flex-col justify-center pl-1"
+          className="hover:bg-blue-200 rounded-xl h-10 flex flex-col justify-center items-center pl-1"
           onClick={() => handleItemClick("About me")}
         >
           <Link to="/about-her">About us</Link>

@@ -5,7 +5,8 @@ import DropdownAbout from "../components/DropdownAbout";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
-const Headers = () => {
+
+const OurPlansHeader = () => {
   const [showDropdownAbout, setShowDropdownAbout] = useState(false);
   const toggleDropdownAbout = () => {
     setShowDropdownAbout(!showDropdownAbout);
@@ -28,17 +29,17 @@ const Headers = () => {
         </p>
       </div>
 
-      <button className="text-red-400 hover:text-red-500 hover:underline hover:font-semibold">
+      <button className="text-red-400 hover:text-red-500 hover:underline">
         <Link to="/">Home</Link>
       </button>
 
-      <button className="text-red-400 hover:text-red-500 hover:underline hover:font-semibold">
+      <button className="text-red-400 hover:text-red-500 hover:underline">
         <Link to="/our-plans">Our Plans</Link>
       </button>
 
       <div onMouseLeave={closeDropdownAbout}>
         <button
-          className="text-red-400 hover:text-red-500 hover:underline hover:font-semibold"
+          className="text-red-400 hover:text-red-500 hover:underline"
           onClick={toggleDropdownAbout}
         >
           About
@@ -51,4 +52,4 @@ const Headers = () => {
   );
 };
 
-export default Headers;
+export default OurPlansHeader;

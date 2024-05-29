@@ -11,7 +11,12 @@ import lauhaisan from "../images/lauhaisan.png";
 import shipper from "../images/shipper.jpg";
 import bg from "../images/home-banner-background.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart, faClock, faList, faSmile} from "@fortawesome/free-solid-svg-icons";
+import {
+  faHeart,
+  faClock,
+  faList,
+  faSmile,
+} from "@fortawesome/free-solid-svg-icons";
 const PurchaseFood = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
 
@@ -139,8 +144,7 @@ const PurchaseFood = () => {
               alt="beach background"
             />
             <div className="text-2xl font-bold">Tiramisu</div>
-            <p>
-Creamy, coffee-infused Italian dessert </p>
+            <p>Creamy, coffee-infused Italian dessert </p>
           </div>
         </div>
 
@@ -161,7 +165,13 @@ Creamy, coffee-infused Italian dessert </p>
               alt="beach background"
             />
             <div className="text-2xl font-bold">HongKong Seafood Hot Pot</div>
-            <p>Hotpot with seafood, what else it could be?<FontAwesomeIcon icon={faSmile} className="text-yellow-400 pl-1" /></p>
+            <p>
+              Hotpot with seafood, what else it could be?
+              <FontAwesomeIcon
+                icon={faSmile}
+                className="text-yellow-400 pl-1"
+              />
+            </p>
           </div>
           <div className="flex flex-col gap-1 mt-[14px]">
             <img
@@ -170,7 +180,10 @@ Creamy, coffee-infused Italian dessert </p>
               alt="beach background"
             />
             <div className="text-2xl font-bold">Crab Tapioca Noodle Soup</div>
-            <p>2 words: TRÈS DÉLICIEUX, Meow's favorite<FontAwesomeIcon icon={faHeart} className="text-red-400 pl-1" /></p>
+            <p>
+              2 words: TRÈS DÉLICIEUX, Meow's favorite
+              <FontAwesomeIcon icon={faHeart} className="text-red-400 pl-1" />
+            </p>
           </div>
         </div>
         <div className="flex justify-center">
@@ -188,14 +201,14 @@ Creamy, coffee-infused Italian dessert </p>
                   Order Details
                 </h2>
                 <img
-              src={shipper}
-              className="w-48 h-60 rounded-3xl ml-[280px]"
-              alt="beach background"
-            />
+                  src={shipper}
+                  className="w-48 h-60 rounded-3xl ml-[280px]"
+                  alt="beach background"
+                />
                 <div className="font-semibold ">
                   Our only shipper is READY! Whenever and whatever you want to
-                  eat, just press "Go to Messenger" and text him with the following
-                  Magic Words:
+                  eat, just press "Go to Messenger" and text him with the
+                  following Magic Words:
                 </div>
                 <div className="font-bold text-center text-2xl text-red-400 py-5">
                   "Anh Ngoăn iu dấu ơiiii, hôm nay bé Meow muốn ăn + dishes"
@@ -222,6 +235,14 @@ Creamy, coffee-infused Italian dessert </p>
               </div>
             </div>
           )}
+        </div>
+
+        <div className="text-center">
+          <div className="font-bold text-7xl">TESTIMONIALS</div>
+          <div className="text-3xl text-gray-500">
+            What my customers (mostly my friends) say about this
+          </div>
+          <div></div>
         </div>
       </div>
 

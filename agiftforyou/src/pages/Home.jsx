@@ -1,7 +1,7 @@
 import React from "react";
 import "../index.css";
 import Headers from "../components/Headers";
-import Footer from "../components/Footer";
+import Footer from "../components/HomeFooter";
 import maldives from "../images/maldives.png";
 
 const Home = () => {
