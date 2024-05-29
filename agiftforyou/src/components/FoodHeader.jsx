@@ -28,17 +28,17 @@ const Headers = () => {
         </p>
       </div>
 
-      <button className="text-red-400 hover:text-red-500 hover:underline hover:font-semibold">
+      <button className="text-red-400 hover:text-red-500 hover:underline ">
         <Link to="/">Home</Link>
       </button>
 
-      <button className="text-red-400 hover:text-red-500 hover:underline hover:font-semibold">
+      <button className="text-red-400 hover:text-red-500 hover:underline">
         <Link to="/our-plans">Our Plans</Link>
       </button>
 
       <div onMouseLeave={closeDropdownAbout}>
         <button
-          className="text-red-400 hover:text-red-500 hover:underline hover:font-semibold"
+          className="text-red-400 hover:text-red-500 hover:underline"
           onClick={toggleDropdownAbout}
         >
           About

@@ -15,7 +15,7 @@ const OurPlansHeader = () => {
     setShowDropdownAbout(false);
   };
   return (
-    <div className="flex flex-row justify-evenly items-center text-xl py-2 font-bold bg-rose-quartz mb-16">
+    <div className="flex flex-row justify-evenly items-center text-xl py-2 font-bold mb-16">
       <div className="flex flex-row">
         <div>
           <img
@@ -24,8 +24,8 @@ const OurPlansHeader = () => {
             className=" w-12 h-12 cursor-pointer "
           />
         </div>
-        <p className=" pr-40 pt-1 flex items-center text-xl text-red-500 font-extrabold">
-          MeowMeowFood
+        <p className=" pr-40 pt-1 flex items-center text-xl text-red-500 font-extrabold pl-2">
+          OURFUTUREPLANS
         </p>
       </div>
 
@@ -34,7 +34,7 @@ const OurPlansHeader = () => {
       </button>
 
       <button className="text-red-400 hover:text-red-500 hover:underline">
-        <Link to="/our-plans">Our Plans</Link>
+        <Link to="/purchase-food">Food Store</Link>
       </button>
 
       <div onMouseLeave={closeDropdownAbout}>

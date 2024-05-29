@@ -9,6 +9,9 @@ import bundau from "../images/bundau.png";
 import banhcanhcua from "../images/banhcanhcua.png";
 import lauhaisan from "../images/lauhaisan.png";
 import shipper from "../images/shipper.jpg";
+import dang from "../images/dang.jpg";
+import tan from "../images/tantruong.jpg";
+import kha from "../images/kha.jpg";
 import bg from "../images/home-banner-background.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -16,6 +19,7 @@ import {
   faClock,
   faList,
   faSmile,
+  faStar,
 } from "@fortawesome/free-solid-svg-icons";
 const PurchaseFood = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -158,7 +162,7 @@ const PurchaseFood = () => {
             <div className="text-2xl font-bold">Bun Dau Mam Tom</div>
             <p>Delicious shrimp paste, tofu noodles</p>
           </div>
-          <div className="flex flex-col gap-1 mt-[90px]">
+          <div className="flex flex-col gap-1 mt-[92px]">
             <img
               src={lauhaisan}
               className="w-[300px] h-auto pr-5"
@@ -237,12 +241,83 @@ const PurchaseFood = () => {
           )}
         </div>
 
-        <div className="text-center">
-          <div className="font-bold text-7xl">TESTIMONIALS</div>
-          <div className="text-3xl text-gray-500">
-            What my customers (mostly my friends) say about this
+        <div className="my-10 mx-16 border-4 border-rose-quartz rounded-2xl">
+          <div className="text-7xl font-bold text-center text-red-400 font-noto-serif pt-10 pb-5">
+            Testimonials
           </div>
-          <div></div>
+          <p className="text-center text-2xl text-red-300 pb-16">
+            What my customers say about our service
+          </p>
+          <div className="flex flex-row justify-center items-center gap-16 pb-10">
+            <div className="flex flex-col pt-10 items-center w-[280px] h-auto gap-2 border-2 border-solid border-rose-quartz rounded-3xl bg-rose-quartz relative">
+              <img
+                src={dang}
+                alt="Facebook"
+                className=" w-20 h-20 absolute top-[-25%] rounded-full"
+              />
+              <h3 className="text-2xl font-bold text-orange-900 font-noto-serif">
+                VO Nam Dang
+              </h3>
+              <div className="flex flex-row">
+                <FontAwesomeIcon icon={faStar} className="text-yellow-500" />
+                <FontAwesomeIcon icon={faStar} className="text-yellow-500" />
+                <FontAwesomeIcon icon={faStar} className="text-yellow-500" />
+                <FontAwesomeIcon icon={faStar} className="text-yellow-500" />
+                <FontAwesomeIcon icon={faStar} className="text-yellow-500" />
+              </div>
+
+              <p className="text-center text-[18px] text-orange-900 pb-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor
+                sit amet.
+              </p>
+            </div>
+            <div className="flex flex-col pt-10 items-center w-[280px] h-auto gap-2 border-2 border-solid border-rose-quartz rounded-3xl bg-rose-quartz relative">
+              <img
+                src={kha}
+                alt="Facebook"
+                className=" w-20 h-20 absolute top-[-25%] rounded-full"
+              />
+              <h3 className="text-2xl font-bold text-orange-900 font-noto-serif">
+                TRUONG Hoang Kha
+              </h3>
+              <div className="flex flex-row">
+                <FontAwesomeIcon icon={faStar} className="text-yellow-500" />
+                <FontAwesomeIcon icon={faStar} className="text-yellow-500" />
+                <FontAwesomeIcon icon={faStar} className="text-yellow-500" />
+                <FontAwesomeIcon icon={faStar} className="text-yellow-500" />
+                <FontAwesomeIcon icon={faStar} className="text-yellow-500" />
+              </div>
+
+              <p className="text-center text-[18px] text-orange-900 pb-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor
+                sit amet.
+              </p>
+            </div>
+            <div className="flex flex-col pt-10 items-center w-[280px] h-auto gap-2 border-2 border-solid border-rose-quartz rounded-3xl bg-rose-quartz relative">
+              <img
+                src={tan}
+                alt="Facebook"
+                className=" w-20 h-20 absolute top-[-25%] rounded-full"
+              />
+              <h3 className="text-2xl font-bold text-orange-900 font-noto-serif">
+                TRUONG Kim Tan
+              </h3>
+              <div className="flex flex-row">
+                <FontAwesomeIcon icon={faStar} className="text-yellow-500" />
+                <FontAwesomeIcon icon={faStar} className="text-yellow-500" />
+                <FontAwesomeIcon icon={faStar} className="text-yellow-500" />
+                <FontAwesomeIcon icon={faStar} className="text-yellow-500" />
+                <FontAwesomeIcon icon={faStar} className="text-yellow-500" />
+              </div>
+
+              <p className="text-center text-[18px] text-orange-900 pb-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor
+                sit amet.
+              </p>
+            </div>
+            
+            
+          </div>
         </div>
       </div>
 
