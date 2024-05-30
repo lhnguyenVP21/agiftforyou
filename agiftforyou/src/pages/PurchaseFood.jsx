@@ -253,7 +253,7 @@ const PurchaseFood = () => {
               <img
                 src={dang}
                 alt="Facebook"
-                className=" w-20 h-20 absolute top-[-25%] rounded-full"
+                className=" w-20 h-20 absolute top-[-25%] rounded-full object-cover"
               />
               <h3 className="text-2xl font-bold text-orange-900 font-noto-serif">
                 VO Nam Dang
@@ -267,15 +267,14 @@ const PurchaseFood = () => {
               </div>
 
               <p className="text-center text-[18px] text-orange-900 pb-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor
-                sit amet.
+                Chị An nên sử dụng ứng dụng này, đảm bảo Nguyên ship không thiếu 1 món 
               </p>
             </div>
             <div className="flex flex-col pt-10 items-center w-[280px] h-auto gap-2 border-2 border-solid border-rose-quartz rounded-3xl bg-rose-quartz relative">
               <img
                 src={kha}
                 alt="Facebook"
-                className=" w-20 h-20 absolute top-[-25%] rounded-full"
+                className=" w-20 h-20 absolute top-[-25%] rounded-full object-cover"
               />
               <h3 className="text-2xl font-bold text-orange-900 font-noto-serif">
                 TRUONG Hoang Kha
@@ -289,15 +288,14 @@ const PurchaseFood = () => {
               </div>
 
               <p className="text-center text-[18px] text-orange-900 pb-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor
-                sit amet.
+                Nguyên chắc chắn là rất yêu chị An khi làm ra dịch vụ này. Chị An sướng nhé :3
               </p>
             </div>
             <div className="flex flex-col pt-10 items-center w-[280px] h-auto gap-2 border-2 border-solid border-rose-quartz rounded-3xl bg-rose-quartz relative">
               <img
                 src={tan}
                 alt="Facebook"
-                className=" w-20 h-20 absolute top-[-25%] rounded-full"
+                className=" w-20 h-20 absolute top-[-25%] rounded-full object-cover "
               />
               <h3 className="text-2xl font-bold text-orange-900 font-noto-serif">
                 TRUONG Kim Tan
@@ -311,8 +309,7 @@ const PurchaseFood = () => {
               </div>
 
               <p className="text-center text-[18px] text-orange-900 pb-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor
-                sit amet.
+                Dịch vụ rất ok, món ăn được lựa và hỏi kĩ càng. Khuyến khích An nên sử dụng.
               </p>
             </div>
             
