@@ -31,8 +31,10 @@
   
 
 
-  .parallelogram {
-    width: 200px; 
-    height: 100px; 
-    transform: skew(-20deg);
+  .parallelogram-right {
+    transform: skew(-5deg);
+  }
+
+  .parallelogram-left {
+    transform: skew(5deg);
   }
