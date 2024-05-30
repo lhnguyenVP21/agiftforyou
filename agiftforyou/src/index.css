@@ -24,17 +24,15 @@
 
 .font-noto-serif {
     font-family: 'Noto Serif', serif;
-    font-weight: 500;
+    font-weight: 600;
   }
 
 
   
-.font-montserrat{
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal;
+
+
+  .parallelogram {
+    width: 200px; 
+    height: 100px; 
+    transform: skew(-20deg);
   }
-
-
-  

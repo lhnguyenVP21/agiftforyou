@@ -14,7 +14,7 @@ const Headers = () => {
     setShowDropdownAbout(false);
   };
   return (
-    <div className="flex flex-row justify-evenly items-center gap-20 text-xl font-bold pt-3 pb-3 absolute right-20 top-5">
+    <div className="flex flex-row justify-evenly items-center gap-20 text-xl font-bold  absolute right-20 top-5">
       <Link to="/">
         <div className="flex flex-row">
           <div>
