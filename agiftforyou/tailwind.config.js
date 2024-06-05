@@ -19,7 +19,10 @@ module.exports = {
         "cyan-blue-azure":"#4682BF",
         "rose-quartz": "#f7cac9",
         "senerity": "#93a9d1"
-      }
+      },
+      fontFamily: {
+        melodrama: ['Melodrama', 'sans-serif'],
+      },
     },
   },
   plugins: [],

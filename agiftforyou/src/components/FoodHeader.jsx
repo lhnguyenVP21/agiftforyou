@@ -1,18 +1,9 @@
 import React from "react";
 import icon from "../images/Meow-icon.png";
-import { useState } from "react";
-import DropdownAbout from "../components/DropdownAbout";
+
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+
 const Headers = () => {
-  const [showDropdownAbout, setShowDropdownAbout] = useState(false);
-  const toggleDropdownAbout = () => {
-    setShowDropdownAbout(!showDropdownAbout);
-  };
-  const closeDropdownAbout = () => {
-    setShowDropdownAbout(false);
-  };
   return (
     <div className="flex flex-row justify-evenly items-center text-xl py-2 font-bold bg-rose-quartz mb-16">
       <div className="flex flex-row">
@@ -36,16 +27,13 @@ const Headers = () => {
         <Link to="/our-plans">Our Plans</Link>
       </button>
 
-      <div onMouseLeave={closeDropdownAbout}>
+      <div>
         <button
           className="text-red-400 hover:text-red-500 hover:underline"
-          onClick={toggleDropdownAbout}
         >
-          About
-          <FontAwesomeIcon icon={faChevronDown} className="text-red-400" />
+          <Link to="/about-her">About Us</Link>
         </button>
 
-        {showDropdownAbout && <DropdownAbout onMouse={closeDropdownAbout} />}
       </div>
     </div>
   );
