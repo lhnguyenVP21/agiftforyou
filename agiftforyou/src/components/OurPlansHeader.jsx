@@ -32,7 +32,7 @@ const OurPlansHeader = () => {
         <button
           className="text-white hover:underline"
         >
-          <Link to="/about-her">About Us</Link>
+          <Link to="/about-her">ABOUT US</Link>
         </button>
 
       </div>

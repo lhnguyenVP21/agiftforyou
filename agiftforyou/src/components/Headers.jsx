@@ -28,7 +28,7 @@ const Headers = () => {
         <button
           className=" hover:underline w-32 h-10 text-center text-white "
         >
-          <Link to="/about-her">About Us</Link>
+          <Link to="/about-her">ABOUT US</Link>
         </button>
       </div>
     </div>
