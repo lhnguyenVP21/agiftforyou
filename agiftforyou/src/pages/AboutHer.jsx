@@ -7,8 +7,8 @@ import {
   differenceInMinutes,
   differenceInSeconds,
 } from "date-fns";
-import { ReactComponent as WorkIcon } from "./work.svg";
-import { ReactComponent as SchoolIcon } from "./school.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBriefcase, faHeart } from "@fortawesome/free-solid-svg-icons";
 import "tailwindcss/tailwind.css";
 import us from "../images/kiss.png";
 import Headers from "../components/Headers";
@@ -22,6 +22,8 @@ import "react-vertical-timeline-component/style.min.css";
 import timelineElements from "./timelineElements";
 
 import { TypeAnimation } from "react-type-animation";
+
+import { Link } from "react-router-dom";
 
 const AboutHer = () => {
   const startDate = new Date("2022-07-15T11:00:00");
@@ -51,8 +53,8 @@ const AboutHer = () => {
     return () => clearInterval(interval);
   }, []);
 
-  let workIconStyles = { background: "#06D6A0" };
-  let schoolIconStyles = { background: "#f9c74f" };
+  let workIconStyles = { background: "#ff0000" };
+  let schoolIconStyles = { background: "#ff0000" };
   return (
     <>
       <div>
@@ -61,7 +63,7 @@ const AboutHer = () => {
 
       <div className=" max-w-full ">
         <div className="min-h-screen">
-          <div className="flex flex-row justify-between px-16 pt-20 pb-40 bg-pink-200">
+          <div className="flex flex-row justify-between px-10 pt-20 pb-40 bg-pink-200">
             <img
               src={us}
               className="w-[300px] h-[425px] rounded-full flex  "
@@ -97,6 +99,7 @@ const AboutHer = () => {
             </div>
           </div>
           <div className="max-w-full bg-gradient-to-bl from-[#FED9B7] to-[#F07197]">
+            <h3 className ="font-bold text-white text-4xl text-center py-5">Our Journey</h3>
             <VerticalTimeline>
               {timelineElements.map((element) => {
                 let isWorkIcon = element.icon === "work";
@@ -105,43 +108,51 @@ const AboutHer = () => {
                   element.buttonText !== null &&
                   element.buttonText !== "";
 
-                return (
-                  <VerticalTimelineElement
-                    key={element.key}
-                    date={element.date}
-                    dateClassName="date"
-                    iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
-                    icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
-                  >
-                    <div className="flex flex-row justify-between">
-                      <div>
-                      <h3 className="vertical-timeline-element-title">
-                        {element.title}
-                      </h3>
-                      <p id="description">{element.description}</p>
-                      {showButton && (
-                        <a
-                          className={`button ${
-                            isWorkIcon ? "workButton" : "schoolButton"
-                          }`}
-                          href="/"
-                        >
-                          {element.buttonText}
-                        </a>
-                      )}
+                  return (
+                    <VerticalTimelineElement
+                      key={element.key}
+                      date={element.date}
+                      dateClassName="date"
+                      iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
+                      icon={
+                        <FontAwesomeIcon
+                          icon={isWorkIcon ? faBriefcase : faHeart}
+                          className="text-red-200"
+                        />
+                      }
+                    >
+                      <div className="flex flex-row justify-between gap-3">
+                        <div>
+                          <h3 className="vertical-timeline-element-title font-bold">
+                            {element.title}
+                          </h3>
+                          <p id="description">{element.description}</p>
+                          {showButton && (
+                            <a
+                              className={`button ${
+                                isWorkIcon ? "workButton" : "schoolButton"
+                              }`}
+                              href="/"
+                            >
+                              {element.buttonText}
+                            </a>
+                          )}
+                        </div>
+  
+                        <img
+                          src={element.image}
+                          alt="Sample"
+                          className="w-44 h-36 object-cover"
+                        />
                       </div>
-                      
-                      <img
-                        src={element.image}
-                        alt="Sample"
-                        className="w-32 h-32 object-cover"
-                      />
-                    </div>
-                  </VerticalTimelineElement>
+                    </VerticalTimelineElement>
                 );
               })}
             </VerticalTimeline>
           </div>
+          <button>
+            <Link to ="/proposal">abc</Link>
+          </button>
         </div>
       </div>
       <div>
